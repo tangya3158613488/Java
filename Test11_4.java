@@ -1,5 +1,6 @@
 package p1;
 //将计算图形面积和周长的功能定义为对外接口
+//接口的创建和实现
 interface IShape{
 	double PI = 3.1415926;
 	abstract double getArea();

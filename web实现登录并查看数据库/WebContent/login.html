@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>登录页</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="./login.css">
+</head>
+<body>
+<!-- particles.js container -->
+<div id="particles-js" style="display: flex;align-items: center;justify-content: center">
+<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1920" height="881"></canvas></div>
+<div class="login-page">
+   <div class="login-content">
+   	<from action="emplogin.html" method="post">
+     <div class="login-tit">登录</div>
+     <div class="login-input">
+       <input type="text" name="name" placeholder="用户名">
+     </div>
+     <div class="login-input">
+      <input type="text" name="empno" placeholder="员工编码">
+    </div>
+    <div class="login-btn">
+      <div class="login-btn-left">
+        <input type="submit" value="登录">
+      </div>
+      <div class="login-btn-right" onclick="changeImg()">
+        <img src="./check.png" alt="" id="picture"> 记住密码
+      </div>
+    </div>
+    </from>
+   </div>
+</div>
+
+
+<!-- scripts -->
+<script src="./particles.js"></script>
+<script src="./app.js"></script>
+<script>
+  function changeImg(){
+    let pic = document.getElementById('picture');
+    console.log(pic.src)
+    if(pic.getAttribute("src",2) =="img/check.png"){
+      pic.src ="img/checked.png"
+    }else{
+      pic.src ="img/check.png"
+    }
+  }
+</script>
+
+</body></html>

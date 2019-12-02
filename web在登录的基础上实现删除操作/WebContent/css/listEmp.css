@@ -1,0 +1,14 @@
+
+body{
+	height:600px;
+	background:url('images/back.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+table{
+	width:80%;
+}
+td{
+	border:1px solid #0000ff;
+	text-align:center;
+}

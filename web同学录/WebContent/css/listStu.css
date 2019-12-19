@@ -1,0 +1,17 @@
+
+body{
+	height:800px;
+	background:url('images/008.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+table{
+	border:2px solid #ff8080;
+	width:100%;
+}
+
+td{
+	border:2px dotted #000040;
+	text-align:center;
+}

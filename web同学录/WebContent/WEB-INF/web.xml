@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>web5</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet-mapping>
+ <servlet-name>stulist</servlet-name>
+ <url-pattern>/stulist.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stulist</servlet-name>
+ <servlet-class>web.StuListServlet</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>stulogin</servlet-name>
+ <url-pattern>/stulogin.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stulogin</servlet-name>
+ <servlet-class>web.StuLoginServlet</servlet-class>
+ </servlet>
+ 
+  <servlet-mapping>
+ <servlet-name>studelete</servlet-name>
+ <url-pattern>/studelete.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>studelete</servlet-name>
+ <servlet-class>web.StuDeleteServlet</servlet-class>
+ </servlet>
+ 
+   <servlet-mapping>
+ <servlet-name>stutoedit</servlet-name>
+ <url-pattern>/toedit.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stutoedit</servlet-name>
+ <servlet-class>web.StuToEditServlet</servlet-class>
+ </servlet>
+ 
+    <servlet-mapping>
+ <servlet-name>stuedit</servlet-name>
+ <url-pattern>/edit.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stuedit</servlet-name>
+ <servlet-class>web.StuEditServlet</servlet-class>
+ </servlet>
+ 
+ 
+ <servlet-mapping>
+ <servlet-name>stuselect</servlet-name>
+ <url-pattern>/stuselect.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stuselect</servlet-name>
+ <servlet-class>web.StuSelectServlet</servlet-class>
+ </servlet>
+ 
+ 
+  <servlet-mapping>
+ <servlet-name>stuinsert</servlet-name>
+ <url-pattern>/stuinsert.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stuinsert</servlet-name>
+ <servlet-class>web.StuInsertServlet</servlet-class>
+ </servlet>
+
+ 
+   <servlet-mapping>
+ <servlet-name>stutoinsert</servlet-name>
+ <url-pattern>/stutoinsert.html</url-pattern>
+ </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>stutoinsert</servlet-name>
+ <servlet-class>web.StuToInsertServlet</servlet-class>
+ </servlet>
+ 
+</web-app>

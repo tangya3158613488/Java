@@ -1,0 +1,17 @@
+
+body{
+	height:800px;
+	background:url('images/003.gif');
+	background-repeat:no-repeat;
+	background-size:80% 80%;
+}
+
+table{
+	border:2px solid #ff8080;
+	width:80%;
+}
+
+td{
+	border:2px dotted #000040;
+	text-align:center;
+}

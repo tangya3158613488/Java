@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.vvv.mapper.MessageMapperCustome" >
+	<select id="findAllMessage" resultType="com.vvv.po.MessageCustome">
+		select t_message.*,t_user.nickName userNickName 
+		from t_message,t_user
+		where t_message.userId=t_user.id
+		order by createTime asc
+	</select>
+</mapper>
